@@ -3,7 +3,7 @@ import videoImg from "../assets/images/home-vid-img.jpg";
 
 function HeroSection() {
   return (
-    <section className=" bg-[#172943] py-36">
+    <section className=" bg-[#172943] pt-36 pb-16">
       <div className="container mx-auto flex">
         <div className="m-2 w-1/2 pe-24 py-7">
           <h1 className="text-[#2ad0bc] font-semibold py-5">RHYTHM & HARMONY</h1>
