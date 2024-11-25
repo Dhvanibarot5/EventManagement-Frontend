@@ -28,7 +28,7 @@ function Header() {
         <div className="text-center text-white font-bold py-10">
           <h2 className="text-5xl py-4">12-14 July / New York</h2>
           <p className="text-8xl">The Ultimate Musical Extravaganza!</p>
-          <button className="bg-blue-500 hover:bg-blue-700 text-white px-10 py-4 my-12">BOOK TICKETS</button>
+          <button className="bg-[#20A5A5] hover:bg-[#6EC1E4] text-white px-10 py-4 my-12">BOOK TICKETS</button>
         </div>
       </div>
     </section>
