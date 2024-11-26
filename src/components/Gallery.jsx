@@ -24,18 +24,18 @@ function Gallery() {
             <img src={img2} alt="Event 2" className="w-full h-[400px] object-cover hover:scale-110 transition-transform duration-300"/>
           </div>
           <div className="overflow-hidden ">
-            <img src={img3} alt="Event 3" className="w-full h-[400px] object-cover hover:scale-110 transition-transform duration-300"/>
+            <img src={img3} alt="Event 3" className="w-full h-[400p] object-cover hover:scale-110 transition-transform duration-300"/>
           </div>
           
           {/* Second Row */}
           <div className="overflow-hidden ">
-            <img src={img4} alt="Event 4" className="w-full h-[400px] object-cover hover:scale-110 transition-transform duration-300"/>
+            <img src={img4} alt="Event 4" className="w-full h-[400p] object-cover hover:scale-110 transition-transform duration-300"/>
           </div>
           <div className="overflow-hidden ">
-            <img src={img5} alt="Event 5" className="w-full h-[400px] object-cover hover:scale-110 transition-transform duration-300"/>
+            <img src={img5} alt="Event 5" className="w-full h-[400p] object-cover hover:scale-110 transition-transform duration-300"/>
           </div>
           <div className="overflow-hidden ">
-            <img src={img6} alt="Event 6" className="w-full h-[400px] object-cover hover:scale-110 transition-transform duration-300"/>
+            <img src={img6} alt="Event 6" className="w-full h-[400p] object-cover hover:scale-110 transition-transform duration-300"/>
           </div>
         </div>
       </div>
