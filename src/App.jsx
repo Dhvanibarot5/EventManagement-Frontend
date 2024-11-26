@@ -1,5 +1,6 @@
 import ArtistInfo from "./components/ArtistInfo";
 import EventSchedule from "./components/EventSchedule";
+import Gallery from "./components/Gallery";
 import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
 import TicketSection from "./components/TicketSection";
@@ -11,6 +12,7 @@ function App() {
       <EventSchedule />
       <ArtistInfo />
       <TicketSection/>
+      <Gallery/>
     </>
   );
 }
