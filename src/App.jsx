@@ -1,4 +1,5 @@
 import ArtistInfo from "./components/ArtistInfo";
+import EndSection from "./components/EndSection";
 import EventSchedule from "./components/EventSchedule";
 import Footer from "./components/Footer";
 import Gallery from "./components/Gallery";
@@ -18,6 +19,7 @@ function App() {
       <Gallery/>
       <Profile/>
       <SponsorSection/>
+      <EndSection/>
       <Footer/>
     </>
   );
