@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import Gallery from "./components/Gallery";
 import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
+import Profile from "./components/Profile";
 import TicketSection from "./components/TicketSection";
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <ArtistInfo />
       <TicketSection/>
       <Gallery/>
+      <Profile/>
       <Footer/>
     </>
   );

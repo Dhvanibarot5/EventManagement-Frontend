@@ -24,7 +24,7 @@ function Gallery() {
             <img src={img2} alt="Event 2" className="w-full h-[400px] object-cover hover:scale-110 transition-transform duration-300"/>
           </div>
           <div className="overflow-hidden ">
-            <img src={img3} alt="Event 3" className="w-full h-[400p] object-cover hover:scale-110 transition-transform duration-300"/>
+            <img src={img3} alt="Event 3" className="w-full h-[400px] object-cover hover:scale-110 transition-transform duration-300"/>
           </div>
           
           {/* Second Row */}
