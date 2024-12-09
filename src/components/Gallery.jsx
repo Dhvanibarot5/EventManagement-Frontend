@@ -14,28 +14,28 @@ function Gallery() {
         <p className="text-white text-5xl font-bold py-5 px-28">
           Take a glimpse into the electrifying atmosphere and memorable moments from our past music events.
         </p>
-        
+
         <div className="grid grid-cols-3 gap-4 mt-8">
           {/* First Row */}
           <div className="overflow-hidden ">
-            <img src={img1} alt="Event 1" className="w-full h-[400px] object-cover hover:scale-110 transition-transform duration-300"/>
+            <img src={img1} alt="Event 1" className="w-full h-[400px] object-cover hover:scale-110 transition-transform duration-300" />
           </div>
           <div className="overflow-hidden ">
-            <img src={img2} alt="Event 2" className="w-full h-[400px] object-cover hover:scale-110 transition-transform duration-300"/>
+            <img src={img2} alt="Event 2" className="w-full h-[400px] object-cover hover:scale-110 transition-transform duration-300" />
           </div>
           <div className="overflow-hidden ">
-            <img src={img3} alt="Event 3" className="w-full h-[400px] object-cover hover:scale-110 transition-transform duration-300"/>
+            <img src={img3} alt="Event 3" className="w-full h-[400px] object-cover hover:scale-110 transition-transform duration-300" />
           </div>
-          
+
           {/* Second Row */}
           <div className="overflow-hidden ">
-            <img src={img4} alt="Event 4" className="w-full h-[400p] object-cover hover:scale-110 transition-transform duration-300"/>
+            <img src={img4} alt="Event 4" className="w-full h-[400px] object-cover hover:scale-110 transition-transform duration-300" />
           </div>
           <div className="overflow-hidden ">
-            <img src={img5} alt="Event 5" className="w-full h-[400p] object-cover hover:scale-110 transition-transform duration-300"/>
+            <img src={img5} alt="Event 5" className="w-full h-[400px] object-cover hover:scale-110 transition-transform duration-300" />
           </div>
           <div className="overflow-hidden ">
-            <img src={img6} alt="Event 6" className="w-full h-[400p] object-cover hover:scale-110 transition-transform duration-300"/>
+            <img src={img6} alt="Event 6" className="w-full h-[400px] object-cover hover:scale-110 transition-transform duration-300" />
           </div>
         </div>
       </div>

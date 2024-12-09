@@ -1,27 +1,22 @@
-import ArtistInfo from "./components/ArtistInfo";
-import EndSection from "./components/EndSection";
-import EventSchedule from "./components/EventSchedule";
-import Footer from "./components/Footer";
-import Gallery from "./components/Gallery";
-import Header from "./components/Header";
-import HeroSection from "./components/HeroSection";
-import Profile from "./components/Profile";
-import SponsorSection from "./components/SponsorSection";
-import TicketSection from "./components/TicketSection";
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Register from './components/Register';
+import Login from './components/Login';
+import Dashboard from './components/Dashboard';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 function App() {
   return (
-    <>
-      <Header />
-      <HeroSection />
-      <EventSchedule />
-      <ArtistInfo />
-      <TicketSection/>
-      <Gallery/>
-      <Profile/>
-      <SponsorSection/>
-      <EndSection/>
-      <Footer/>
-    </>
+    <Router>
+      <ToastContainer />
+      <Routes>
+        <Route path="/register" element={<Register />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/events" element={<Dashboard />} />
+        <Route path="/" element={<Login />} /> {/* Redirect to login by default */}
+      </Routes>
+    </Router>
   );
 }
 
