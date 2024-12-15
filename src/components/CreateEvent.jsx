@@ -63,7 +63,7 @@ function CreateEvent() {
       ...prev,
       [name]: type === "number" ? parseInt(value) || "" : value,
     }));
-    // Clear error when user starts typing
+    
     if (errors[name]) {
       setErrors((prev) => ({ ...prev, [name]: "" }));
     }
@@ -73,7 +73,7 @@ function CreateEvent() {
     const file = e.target.files[0];
     if (file) {
       if (file.size > 5 * 1024 * 1024) {
-        // 5MB limit
+       
         setErrors((prev) => ({ ...prev, image: "Image must be less than 5MB" }));
         return;
       }
@@ -86,7 +86,7 @@ function CreateEvent() {
         setImagePreview(reader.result);
       };
       reader.readAsDataURL(file);
-      // Clear image error
+      
       setErrors((prev) => ({ ...prev, image: "" }));
     }
   };
@@ -98,12 +98,12 @@ function CreateEvent() {
     try {
       setIsSubmitting(true);
 
-      // Create event object
+    
       const eventObject = {
         ...formData,
         id: id || Date.now(),
         createdAt: new Date().toISOString(),
-        imageUrl: imagePreview, // Store the image preview URL
+        imageUrl: imagePreview, 
       };
 
       if (id) {
@@ -132,7 +132,7 @@ function CreateEvent() {
       </div>
 
       <form onSubmit={handleSubmit} className="space-y-6 bg-white shadow-sm rounded-lg p-6">
-        {/* Image Upload */}
+       
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-2">Event Image</label>
           <div className="mt-1 flex justify-center px-6 pt-5 pb-6 border-2 border-gray-300 border-dashed rounded-lg">
@@ -166,7 +166,7 @@ function CreateEvent() {
 
         {/* Event Details */}
         <div className="grid grid-cols-1 gap-6">
-          {/* Title Input */}
+        
           <div>
             <label className="block text-sm font-medium text-gray-700">Event Title</label>
             <input

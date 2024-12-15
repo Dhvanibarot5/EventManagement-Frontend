@@ -16,7 +16,7 @@ function Calendar() {
     const [isLoading, setIsLoading] = useState(true);
     const [error, setError] = useState(null);
 
-    // Sample events data - replace with your actual data
+ 
     const [events, setEvents] = useState([
         {
             id: 1,
@@ -39,10 +39,7 @@ function Calendar() {
         const fetchEvents = async () => {
             try {
                 setIsLoading(true);
-                // Replace with your API call
-                // const response = await fetch('/api/events');
-                // const data = await response.json();
-                // setEvents(data);
+               
                 setIsLoading(false);
             } catch (err) {
                 setError('Failed to load events');
@@ -51,9 +48,9 @@ function Calendar() {
         };
 
         fetchEvents();
-    }, [currentDate]); // Refetch when month changes
+    }, [currentDate]); 
 
-    // Get all days in current month including padding days
+  
     const monthStart = startOfMonth(currentDate);
     const monthEnd = endOfMonth(currentDate);
     const calendarStart = startOfWeek(monthStart);
@@ -77,15 +74,15 @@ function Calendar() {
         setCurrentDate(new Date());
     };
 
-    // Get events for a specific day
+  
     const getEventsForDay = (day) => {
         return events.filter(event => isSameDay(event.date, day));
     };
 
-    // Handle event click
+  
     const handleEventClick = (event) => {
         console.log('Event clicked:', event);
-        // Add your event click handler here
+        
     };
 
     if (isLoading) {

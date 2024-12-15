@@ -5,7 +5,7 @@ export const eventService = {
     try {
       const response = await fetch(API_URL, {
         method: "POST",
-        body: eventData, // FormData object
+        body: eventData, 
       });
       if (!response.ok) throw new Error("Failed to create event");
       return await response.json();

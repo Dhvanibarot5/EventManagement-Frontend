@@ -7,28 +7,21 @@ import "react-toastify/dist/ReactToastify.css";
 import SignUp from "./components/SignUp";
 import Login from "./components/Login";
 
-// Lazy load components for better performance
 const Dashboard = React.lazy(() => import("./components/Dashboard"));
 const Events = React.lazy(() => import("./components/Events"));
 const Calendar = React.lazy(() => import("./components/Calendar"));
 const CreateEvent = React.lazy(() => import("./components/CreateEvent"));
 
-// Layout wrapper component  
 const Layout = ({ children }) => {
   return (
     <div className="min-h-screen bg-gray-50">
       <ToastContainer />
       <Header />
-      <div className="pt-16">
-        {" "}
-        {/* Padding for fixed header */}
-        {children}
-      </div>
+      <div className="pt-16">{children}</div>
     </div>
   );
 };
 
-// Loading component
 const LoadingSpinner = () => (
   <div className="flex items-center justify-center min-h-screen">
     <div className="text-center">
@@ -38,7 +31,6 @@ const LoadingSpinner = () => (
   </div>
 );
 
-// Error Boundary Component
 class ErrorBoundary extends React.Component {
   constructor(props) {
     super(props);
@@ -76,7 +68,6 @@ function App() {
           <Layout>
             <Suspense fallback={<LoadingSpinner />}>
               <Routes>
-                {/* Redirect root to dashboard */}
                 <Route path="/" element={<Navigate to="/dashboard" replace />} />
 
                 {/* Main routes */}

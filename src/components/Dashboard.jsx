@@ -16,13 +16,12 @@ function Dashboard() {
   const sortedUpcomingEvents = events
     .filter((event) => new Date(event.date) > new Date())
     .sort((a, b) => new Date(a.date) - new Date(b.date))
-    .slice(0, 6); // Show 6 events for better grid layout
+    .slice(0, 6); 
 
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Enhanced Hero Section */}
       <div className="relative bg-gradient-to-r from-purple-600 to-indigo-600 pb-32 overflow-hidden">
-        {/* Decorative background patterns */}
         <div className="hidden sm:block sm:absolute sm:inset-y-0 sm:h-full sm:w-full" aria-hidden="true">
           <div className="relative h-full max-w-7xl mx-auto">
             <svg
@@ -117,11 +116,7 @@ function Dashboard() {
         </div>
       </div>
 
-      {/* Rest of your existing content (Events Grid) */}
-      <div className="relative -mt-32 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Your existing events grid code */}
-        {/* ... */}
-      </div>
+      <div className="relative -mt-32 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"></div>
     </div>
   );
 }
